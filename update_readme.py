@@ -2,8 +2,7 @@ import requests
 from datetime import datetime
 
 def get_weather(city="São Paulo"):
-    url = f"
-https://wttr.in/Sao%20Paulo?format=%l:+%c+%t\n"
+url="https://wttr.in/Sao%20Paulo?format=%l:+%c+%t\n"
     try:
         response = requests.get(url)
         if response.status_code == 200:
