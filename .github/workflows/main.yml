@@ -1,0 +1,39 @@
+name: Atualizar Clima no README
+
+on:
+  schedule:
+    - cron: '0 9 * * *' 
+  workflow_dispatch:      
+  push:
+    paths:
+      - 'update_weather.py'
+
+jobs:
+  update-weather:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependências
+        run: pip install requests
+
+      - name: Executar script de clima
+        run: python update_weather.py
+
+      - name: Commit e push se houver alterações
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "Sem alterações no README.md"
+          else
+            git commit -m "🤖 Atualizando clima automaticamente"
+            git push
