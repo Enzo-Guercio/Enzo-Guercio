@@ -1,9 +1,9 @@
 # 👋 Bem-vindo ao meu perfil GitHub
 
-### 🌤️ Clima em Curitiba
+### 🌤️ Clima em Manaus
 ```
-Curitiba: ☁️   +17°C
-Atualizado em: 02/06/2025 16:52
+Manaus: 🌦   +30°C
+Atualizado em: 02/06/2025 17:20
 ```
 
 _Automaticamente atualizado com o clima via [wttr.in](https://wttr.in)_
