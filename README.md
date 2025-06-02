@@ -2,8 +2,8 @@
 
 ### 🌤️ Clima em São Paulo
 ```
-São Paulo: ⛅️  +21°C
-Atualizado em: 02/06/2025 11:14
+São Paulo: ☀️   +23°C
+Atualizado em: 02/06/2025 16:48
 ```
 
 _Automaticamente atualizado com o clima via [wttr.in](https://wttr.in)_
