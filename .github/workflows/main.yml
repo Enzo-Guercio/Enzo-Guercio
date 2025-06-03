@@ -1,5 +1,9 @@
 name: Atualizar Clima no README
 
+name: depurar código 
+- name: Listar arquivos
+  run: ls -la
+
 on:
   schedule:
     - cron: '0 9 * * *' 
